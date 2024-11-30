@@ -1,21 +1,10 @@
-#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <Eigen/Dense>
+
 
 int main()
 {
-    auto window = sf::RenderWindow({1920u, 1080u}, "CMake SFML Project");
-    window.setFramerateLimit(144);
-
-    while (window.isOpen())
-    {
-        for (auto event = sf::Event(); window.pollEvent(event);)
-        {
-            if (event.type == sf::Event::Closed)
-            {
-                window.close();
-            }
-        }
-
-        window.clear();
-        window.display();
-    }
+    Eigen::Vector2f v = {1.3, 7.9};
+    std::cout << "hello" << std::endl;
+    std::cout << v << std::endl;
 }

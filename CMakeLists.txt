@@ -14,6 +14,16 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Eigen)
 
-add_executable(main src/main.cpp)
+add_executable(main src/main.cpp
+        src/libmath/overlap.cpp
+        src/libmath/overlap.h
+        src/libmath/Gaussian.h
+        src/libmath/kinetic.cpp
+        src/libmath/kinetic.h
+        src/libmath/nucAttraction.cpp
+        src/libmath/nucAttraction.h
+        src/libmath/twoElectronRepulsion.cpp
+        src/libmath/twoElectronRepulsion.h
+)
 target_link_libraries(main PRIVATE Eigen3::Eigen)
 target_compile_features(main PRIVATE cxx_std_17)
