@@ -2,4 +2,4 @@
 
 #include "Gaussian.h"
 
-double twoElectronRepulsion(Gaussian A, Gaussian B, Gaussian C, Gaussian D);
+double twoElectronRepulsion(const Gaussian& A, const Gaussian& B, const Gaussian& C, const Gaussian& D);

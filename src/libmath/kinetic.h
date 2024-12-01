@@ -2,4 +2,4 @@
 
 #include "Gaussian.h"
 
-double kinetic(Gaussian A, Gaussian B);
+double kinetic(const Gaussian& A, const Gaussian& B);

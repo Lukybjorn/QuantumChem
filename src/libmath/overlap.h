@@ -2,4 +2,4 @@
 
 #include "Gaussian.h"
 
-double overlap(Gaussian A, Gaussian B);
+double overlap(const Gaussian& A, const Gaussian& B);
